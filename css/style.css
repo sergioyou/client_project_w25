@@ -1,35 +1,46 @@
+/*For some of the coding below, I did ask ChatGPT to help assist me on the alignments with some text such as asking it to give me ways of padding it correctly and help with color coordination*/
+/*I also asked Chat GPT to assist me on the skip to main content since I was sturggling to get it off screen, and now it pops up when you click tab and goes away perfectly!*/
+
 /*Skip to main*/
-.skip-link {
+.skip {
     position: absolute;
-    top: -40px;
-    left: 10px;
-    background: #007bff;
-    color: white;
-    padding: 10px;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+    background-color: #003366;
+    color: white; 
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: top 0.3s ease;
+    font-size: 16px;
+    border: 2px solid #003366;
 }
 
-.skip-link:focus {
-    top: 10px;
+.skip:focus {
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
     outline: 2px solid #ffcc00;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-
+/*Body content*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    line-height: 1.6;
 }
 
 /* Grid*/
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     gap: 10px;
     padding: 20px;
 }
@@ -50,14 +61,7 @@ header img {
     max-width: 200px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 10px;
-    justify-items: center;
-}
-
+/*Nav links styling*/
 nav ul li {
     background-color: white;
     padding: 10px;
@@ -66,8 +70,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #007bff;
-    font-size: 1.2rem;
+    color: #0056b3;  /* Darker color for better contrast */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #003366;  /* Darker shade on hover for better visibility */
+    text-decoration: underline;
+}
+
+nav ul li a:focus {
+    outline: 3px solid #ffcc00;
 }
 
 /* Main Content */
@@ -113,6 +126,7 @@ ul li, ol li {
     margin-bottom: 5px;
 }
 
+
 /* Footer */
 footer {
     background-color: #343a40;
@@ -122,13 +136,25 @@ footer {
     border-radius: 5px;
 }
 
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Highlight color for better visibility */
+    text-decoration: underline;
+}
+
+
 /* Links */
 a {
-    color: #007bff;
+    color: #001a33;
     text-decoration: none;
 }
 
 a:hover {
+    color: #001f33;
     text-decoration: underline;
 }
 
@@ -169,7 +195,7 @@ h3 {
     margin-top: 10px;
 }
 
-/* Bullet Points - Improves List Readability */
+/*Improving List Readability */
 ul, ol {
     margin-left: 20px;
     padding-left: 20px;
