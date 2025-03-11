@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* Grid Container */
+/* Grid*/
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -137,18 +137,44 @@ a:focus {
     outline: 2px solid #ffcc00;
 }
 
-/* Buttons */
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+/*Designing page layouts to bold the important text*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Page Titles */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
 }
 
+/* Section Headings */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Subheadings */
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Bullet Points - Improves List Readability */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
